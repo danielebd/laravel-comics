@@ -5,13 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/home', function () {
-
-    $data = [
-        'comics' => config('db')
-    ];
-    
-
-    return view('home', $data);
+    $comics = config('db.comics');
+    return view('home', compact('comics'));
 })->name('home');
 
 Route::get('/comics', function () {
