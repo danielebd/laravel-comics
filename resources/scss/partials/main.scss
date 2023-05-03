@@ -20,12 +20,16 @@
             .comic-box {
                 margin: 50px 10px;
                 width: 190px;
+                text-decoration: none;
+                color: white;
                 .comic {
                     width: 190px;
                     padding-bottom: 10px;
+                    
                     img {
                         width: 100%;
                         margin: 0 auto;
+                        height: 270px;
                     }
                     .title {
                         text-transform: uppercase;

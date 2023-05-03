@@ -5,7 +5,7 @@
     <div id="menu">
         <ul>
             <li><a href="#">CHARACTERS</a></li>
-            <li><a href="{{ route('comic') }}">COMICS</a></li>
+            <li><a href="{{ route('home') }}">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">TV</a></li>
@@ -18,3 +18,4 @@
         </ul>
     </div>
 </header>
+<section id="jumbo"></section>

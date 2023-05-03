@@ -9,10 +9,14 @@ Route::get('/home', function () {
     return view('home', compact('comics'));
 })->name('home');
 
-Route::get('/comics', function () {
-    return view('comic');
-})->name('comic');
+Route::get('/comic/{index}', function ($index) {
 
-Route::get('/', function () {
-    return view('home');
-});
+    $comics_total = config('db.comics');
+    if($index > count($comics_total) - 1){
+        abort(404);
+    };
+    $comics = $comics_total[$index];
+
+    return view('comic', compact('comics'));
+})->name('comic')->where('index', '[0-9]+');
+
