@@ -1,9 +1,2 @@
-@extends('layouts.app')
-
-@section('page.main')
-    <div class="container">
-        
-
-    </div>
-@endsection
+@extends('home_main')
 {{-- <img src="{{ Vite::asset('resources/img/pluto.webp') }}" alt="" srcset=""> --}}
