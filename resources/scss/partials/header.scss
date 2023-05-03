@@ -6,6 +6,9 @@ header {
     #logo {
         padding: 15px 0;
         width: 90px;
+        &:hover {
+            cursor: pointer;
+        }
         
         img {
             width: 100%;

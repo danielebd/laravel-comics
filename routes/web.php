@@ -12,11 +12,11 @@ Route::get('/home', function () {
     
 
     return view('home', $data);
-});
+})->name('home');
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/comics', function () {
+    return view('comic');
+})->name('comic');
 
 Route::get('/', function () {
     return view('home');

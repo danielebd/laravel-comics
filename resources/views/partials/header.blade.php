@@ -1,11 +1,11 @@
 <header>
-    <div id="logo">
+    <a id="logo" href="{{route('home')}}">
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo">
-    </div>
+    </a>
     <div id="menu">
         <ul>
             <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#">COMICS</a></li>
+            <li><a href="{{ route('comic') }}">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">TV</a></li>
