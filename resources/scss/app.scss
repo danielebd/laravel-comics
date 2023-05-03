@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import "partials/typo.scss";
 
 header {
     max-width: 81.25rem;
@@ -27,6 +28,7 @@ header {
                     text-align: end;
                     border: none;
                     border-bottom: solid #0c7cec;
+                    max-width: 9.375rem ;
                 }
                 a{
                     text-decoration: none;
