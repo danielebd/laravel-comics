@@ -1,0 +1,114 @@
+#big-container {
+    background-color: #0282f9;
+    .container {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        max-width: 81.25rem;
+        margin: 0 auto;
+        padding: 50px;
+        .part {
+            display: flex;
+            align-items: center;
+            color: white;
+            .img {
+                padding-right: 10px;
+                img {
+                    width: 55px;
+                    height: 55px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.big-container {
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .container {
+        max-width: 81.25rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        #container-columns {
+            display: flex;
+            #column {
+                margin-top: 30px;
+                margin-right: 70px;
+                h1 {
+                    font-size: 21px;
+                    margin: 0;
+                }
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+                    li {
+                        line-height: 22px;
+                        color: rgba(211, 211, 211, 0.384);
+                        font-size: smaller;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .img {
+            width: 570px;
+            height: 370px;
+        }
+        img {
+            width: 570px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+#sub-container {
+    background-color: #303030;
+    #sub {
+        max-width: 81.25rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+        &>h3 {
+            color: white;
+            padding: 13px;
+            margin: 0;
+            border: solid #0c7cec 2px;
+            &:hover {
+                        cursor: pointer;
+                    }
+        }
+        #social {
+            h3 {
+                display: inline-block;
+                color: #0c7cec;
+            }
+            div {
+                display: inline-block;
+                width: 35px;
+                background-color: #797979;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 50px;
+                vertical-align: middle;
+                margin-left: 20px;
+                &:hover {
+                        cursor: pointer;
+                    }
+                i {
+                    font-size: 22px;
+                    vertical-align: middle;
+                    color: #303030;
+                    
+                }
+            }
+        }
+    }
+}
