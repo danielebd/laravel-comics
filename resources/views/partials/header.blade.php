@@ -5,7 +5,7 @@
     <div id="menu">
         <ul>
             <li><a href="#">CHARACTERS</a></li>
-            <li><a href="{{ route('home') }}">COMICS</a></li>
+            <li class="{{ Route::currentRouteName() === 'home' ? 'active' : ''}}"><a href="{{ route('home') }}">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">TV</a></li>
