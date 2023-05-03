@@ -9,7 +9,7 @@ Route::get('/home', function () {
     $data = [
         'comics' => config('db')
     ];
-    dd($data);
+    
 
     return view('home', $data);
 });

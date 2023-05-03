@@ -1,0 +1,50 @@
+.my-container {
+    background-color: #1c1c1c;
+    color: white;
+    .container-comics-list {
+        max-width: 81.25rem;
+        position: relative;
+        margin: 0 auto;
+        h2 {
+            margin: 0;
+            padding: 10px 30px;
+            background-color: #0c7cec;
+            display: inline-block;
+            position: absolute;
+            top: -30px;
+        }
+        .comics-list {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .comic-box {
+                margin: 50px 10px;
+                width: 190px;
+                .comic {
+                    width: 190px;
+                    padding-bottom: 10px;
+                    img {
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    .title {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .button {
+            padding: 20px 0;
+            button {
+                margin: 0px auto;
+                display: block;
+                background-color: #0c7cec;
+                color: white;
+                border: none;
+                font-size: 20px;
+                padding: 10px 50px;
+                cursor: pointer;
+            }
+        }
+    }
+}
