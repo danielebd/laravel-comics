@@ -7,7 +7,7 @@
         <div class="container-comics-list">
             <h2 class="title-section">CURRENT SERIES</h2>
             <div class="comics-list">
-                @foreach ($comics as $item)
+                @foreach ($dc as $item)
                     @include('partials.comic_card')
                 @endforeach
             </div>

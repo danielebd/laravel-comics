@@ -1,11 +1,11 @@
 <header>
-    <a id="logo" href="{{route('home')}}">
+    <a id="logo" href="{{route('comics')}}">
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo">
     </a>
     <div id="menu">
         <ul>
             <li><a href="#">CHARACTERS</a></li>
-            <li class="{{ Route::currentRouteName() === 'home' ? 'active' : ''}}"><a href="{{ route('home') }}">COMICS</a></li>
+            <li class="{{ Str::startsWith(Route::currentRouteName(), 'comic') ? 'active' : ''}}"><a href="{{ route('comics') }}">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">TV</a></li>

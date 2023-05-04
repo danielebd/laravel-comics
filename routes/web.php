@@ -4,19 +4,19 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/home', function () {
-    $comics = config('db.comics');
-    return view('home', compact('comics'));
-})->name('home');
+Route::get('/comics', function () {
+    $dc = config('db.comics_list');
+    return view('comics', compact('dc'));
+})->name('comics');
 
 Route::get('/comic/{index}', function ($index) {
 
-    $comics_total = config('db.comics');
-    if($index > count($comics_total) - 1){
+    $dc_total = config('db.comics_list');
+    if($index > count($dc_total) - 1){
         abort(404);
     };
-    $comics = $comics_total[$index];
+    $dc = $dc_total[$index];
 
-    return view('comic', compact('comics'));
+    return view('/comic', compact('dc'));
 })->name('comic')->where('index', '[0-9]+');
 
