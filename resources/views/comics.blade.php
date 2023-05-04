@@ -18,3 +18,7 @@
         </div>
     </section>
 @endsection
+
+@section('page.title')
+    DC Comics
+@endsection

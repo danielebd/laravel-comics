@@ -1,0 +1,41 @@
+.bluebar {
+    height: 80px;
+    background-color: #0282f9;
+    .img-container {
+        max-width: 1025px;
+        margin: 0 auto;
+        position: relative;
+        .img {
+            max-width: 200px;
+            position: absolute;
+            bottom: -60px;
+            border: solid white 0.2rem;
+            img {
+                width: 100%;
+            }
+            div {
+                text-align: center;
+                color: white;
+                padding: 0.1rem;
+                font-size: 0.8rem;
+                background-color: #00a9d9;
+            }
+        }
+    }
+}
+
+.details {
+    max-width: 1025px;
+    display: flex;
+    margin: 80px auto;
+    .check{
+        background-color: #55ba59;
+        
+        color: white;
+        .price-container{
+            justify-content: space-between;
+            padding: 13px 20px;
+        }
+        
+    }
+}

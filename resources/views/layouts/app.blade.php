@@ -12,6 +12,7 @@
     @include('partials/header')
     <main>
         @yield('page.main')
+        @yield('comics.main')
     </main>
     @include('partials/footer')</body>
 </html>
